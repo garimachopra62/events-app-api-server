@@ -6,7 +6,7 @@ const router = express.Router();
 const cg = require('../services/config.service');
 
 /**
- * GET /config
+ * GET /config -- just making change to see if it updates in branch 
  */
 router.get('/', (req, res) => {
    res.json({ config: cg.getConfig()});
